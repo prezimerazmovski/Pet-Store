@@ -41,5 +41,8 @@ There are several ways to run a Spring Boot application on your local machine. O
  - GetAllPets
   
    HTTP GET localhost:8080/list-pets
+ - Count of SuccessfulyBuyPets and UnsuccessfulyBuyPets
+  
+   HTTP POST localhost:8080/history-log
    
 
