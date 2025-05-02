@@ -11,14 +11,15 @@ There are several ways to run a Spring Boot application on your local machine. O
 
 - Download the zip or clone the Git repository.
 - Unzip the zip file (if you downloaded one)
-- Open Command Prompt and Change directory (cd) to folder containing pom.xml,command run: mvn clean install
+- Open Command Prompt and Change directory (cd) to folder containing pom.xml,
+- run maven command : mvn clean install
 - Open IDE
 - File -> Import -> Navigate to the folder where you unzipped the zip
 - Select the project
 - Choose the Spring Boot Application file (search for @SpringBootApplication)
 - Right-Click on the file and Run as Java Application
-## Database conficuration
-- You need to create database with name=Pet Store
+## Database configuration
+- You need to create database in PostgreSQL latest version with name=Pet Store 
 - Set following properties in application.properties:
 - spring.datasource.url=jdbc:postgresql://localhost:5432/Pet Store
 - spring.datasource.username={username}
