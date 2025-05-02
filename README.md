@@ -21,17 +21,25 @@ There are several ways to run a Spring Boot application on your local machine. O
 - You need to create database with name=Pet Store
 - Set following properties in application.properties:
 - spring.datasource.url=jdbc:postgresql://localhost:5432/Pet Store
-  spring.datasource.username={username}
-  spring.datasource.password={password}
-  spring.jpa.hibernate.ddl-auto=create-drop
+- spring.datasource.username={username}
+- spring.datasource.password={password}
+- spring.jpa.hibernate.ddl-auto=create-drop
   ## Demo
   After you start the application the server will listen on port 8080
- - Get all players
+ - CreatePets
   
-   HTTP GET localhost:8080/players
- - Post players
+   HTTP POST localhost:8080/create-pets
+ - CreateUsers
   
-   HTTP POST localhost:8080/players/add
- - Delete players
+   HTTP POST localhost:8080/create-users
+ - buyPets
   
-   HTTP DELETE localhost:8080/players/delete/{id}
+   HTTP POST localhost:8080/buy
+ - GetAllUsers
+  
+   HTTP GET localhost:8080/list-users
+ - GetAllPets
+  
+   HTTP GET localhost:8080/list-pets
+   
+
